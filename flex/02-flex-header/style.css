@@ -1,6 +1,20 @@
-.header  {
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
   font-family: monospace;
   background: papayawhip;
+  display: flex;
+  align-items: center;
+  padding: 10px;
 }
 
 .logo {
@@ -9,6 +23,16 @@
   color: tomato;
   background: white;
   padding: 4px 32px;
+}
+
+.left-links ul,
+.right-links ul {
+  display: flex;
+  gap: 10px;
+}
+
+.logo {
+  margin: 0 auto;
 }
 
 ul {
